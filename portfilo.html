@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- common meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/logo/faveicon.jpg" type="image/x-icon" />
+
+  <!--=== fontaswesome ===-->
+  <link rel="stylesheet" href="assets/fontaswesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/fontaswesome/css/fontawesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <!--=== owl carousel css === -->
+  <link rel="stylesheet" href="css/vendor/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <title>
+    Portfilo - Yugal Personal Portfolio
+  </title>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.getItem("color-theme") === "dark" ||
+      (!("color-theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader_line"></div>
+  </div>
+  <!-- /PRELOADER -->
+
+  <div class="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+    <div class="z-50">
+      <!-- container start -->
+      <div class="container">
+        <!-- header start for large screens -->
+        <header class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
+          <div class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black">
+            <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
+              <!-- website logo -->
+              <a class="text-5xl font-semibold" href="index.html">
+                <img class="h-[26px] lg:h-[32px]" src="images/logo/logo.png" alt="logo" />
+              </a>
+              <div class="flex items-center">
+                <!-- light and dark mode button -->
+                <button id="theme-toggle-mobile" type="button" class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
+                  <i id="theme-toggle-dark-icon-mobile" class="fa-solid text-xl fa-moon hidden"></i>
+                  <i id="theme-toggle-light-icon-mobile" class="fa-solid fa-sun text-xl hidden"></i>
+                </button>
+                <!-- mobile toggle button -->
+                <button id="menu-toggle" type="button" class="menu-toggle-btn">
+                  <i id="menu-toggle-open-icon" class="fa-solid fa-bars text-xl"></i>
+                  <i id="menu-toggle-close-icon" class="fa-solid fa-xmark text-xl hidden"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- header items two for large screens -->
+          <nav class="hidden lg:block">
+            <ul class="flex my-12">
+              <li>
+                <a class="menu-item-two" href="index.html">
+                  <span class="mr-2 text-base">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="menu-item-two" href="about.html">
+                  <span class="mr-2 text-base">
+                    <i class="fa-regular fa-user"></i>
+                  </span>
+                  About
+                </a>
+              </li>
+              <li>
+                <a class="menu-item-two" href="resume.html">
+                  <span class="mr-2 text-base">
+                    <i class="fa-regular fa-file-lines"></i>
+                  </span>
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a class="menu-item-two-active" href="portfilo.html">
+                  <span class="mr-2 text-base">
+                    <i class="fas fa-briefcase"></i>
+                  </span>
+                  Works
+                </a>
+              </li>
+              <!-- <li>
+                <a class="menu-item-two" href="blog.html">
+                  <span class="mr-2 text-base">
+                    <i class="fa-brands fa-blogger"></i>
+                  </span>
+                  Blogs
+                </a>
+              </li> -->
+              <li>
+                <a class="menu-item-two" href="contact.html">
+                  <span class="mr-2 text-base">
+                    <i class="fa-solid fa-address-book"></i>
+                  </span>
+                  Contact
+                </a>
+              </li>
+              <li>
+                <!-- light and dark mode button -->
+                <button id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">
+                  <i id="theme-toggle-dark-icon" class="fa-solid text-xl fa-moon hidden"></i>
+                  <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-xl hidden"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- mobile menu start -->
+          <nav id="navbar" class="hidden lg:hidden">
+            <ul
+              class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
+              <li>
+                <a class="mobile-menu-item-twos" href="index.html">
+                  <span class="mr-2 text-xl">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-item-twos" href="about.html">
+                  <span class="mr-2 text-xl">
+                    <i class="fa-regular fa-user"></i>
+                  </span>
+                  About
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-item-twos" href="resume.html">
+                  <span class="mr-2 text-xl">
+                    <i class="fa-regular fa-file-lines"></i>
+                  </span>
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-item-twos-active" href="portfilo.html">
+                  <span class="mr-2 text-xl">
+                    <i class="fas fa-briefcase"></i>
+                  </span>
+                  Works
+                </a>
+              </li>
+              <!-- <li>
+                <a class="mobile-menu-item-twos" href="blog.html">
+                  <span class="mr-2 text-xl">
+                    <i class="fa-brands fa-blogger"></i>
+                  </span>
+                  Blogs
+                </a>
+              </li> -->
+              <li>
+                <a class="mobile-menu-item-twos" href="contact.html">
+                  <span class="mr-2 text-xl">
+                    <i class="fa-solid fa-address-book"></i>
+                  </span>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- mobile menu end -->
+        </header>
+        <!-- header  end -->
+
+        <!-- portfolio page contant start -->
+        <section class="bg-white  lg:rounded-2xl dark:bg-[#111111]">
+          <div class="container mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
+            <div class="py-12">
+              <h2 class="after-effect after:left-48 mt-12 lg:mt-0">Portfolio</h2>
+
+              <!-- fillter group buttons -->
+              <ul
+                class="button-group isotop-menu-wrapper mt-[30px] flex w-full justify-start md:justify-end flex-wrap font-medium">
+                <li class="fillter-btn mr-4 md:mx-4 is-checked" data-filter="*">All</li>
+                <!-- <li class="fillter-btn mr-4 md:mx-4" data-filter=".dev">Video</li> -->
+                <li class="fillter-btn mr-4 md:mx-4" data-filter=".custom">Website</li>
+                <li class="fillter-btn mr-4 md:mx-4" data-filter=".plugin"> Mobile App</li>
+                <li class="fillter-btn mr-4 md:mx-4" data-filter=".branding"> Logo</li>
+              </ul>
+            </div>
+            <!-- End py-12 -->
+
+            <div id="isotop-gallery-wrapper" class="mymix portfolio_list-two  three-col ">
+              <div class="grid-sizer"></div>
+
+              <!-- *************** 1. portfolio items one start *************** -->
+              <div class="portfolio_list-two-items isotop-item plugin ">
+                <div class="rounded-lg bg-[#fff0f0] p-6 dark:bg-transparent dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloOne" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/1.jpg" alt="portfolio image" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Android App Development</span>
+                  <h2
+                    class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloOne" rel="modal:open"> MH-RTO (Informative App) </a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item one  -->
+              <div id="portfiloOne" class="modal-container modal">
+                <div
+                  class="overflow-y-scroll scroll-hide-1700  max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    Android App Development
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium"> Mobile Application</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Langages :&nbsp;
+                        <span class="font-medium">Java, Android Studio</span>
+                      </p>
+                    </div>
+
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                       <span class="font-medium">Internship Project</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        GitHub :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          <a href="https://github.com/Yugal-kosamshile/RTO-Application" target="_blank" rel="noopener noreferrer">MH-RTO</a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    Developed an Android application to provide comprehensive information about 
+                    Regional Transport Offices (RTO) in Maharashtra. This Android application provides 
+                    information about Road Transport Office (RTO) rules, violations, and office 
+                    locations through a user-friendly interface. Users can view PDF documents with 
+                    detailed information for each section: rules, violations, and RTO office details. 
+                    The app also includes an "About" page for additional information about the app or organization.
+                  </p>
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/1.jpg"
+                      alt="portfolio image" />
+                  </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+              <!-- *************** 2. portfolio items two start *************** -->
+              <div class="portfolio_list-two-items isotop-item branding ">
+                <div class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloTwo" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/2.jpg" alt="portfolio image" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Logo</span>
+                  <h2
+                    class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloTwo" rel="modal:open">Personal Design</a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item two  -->
+              <div id="portfiloTwo" class="modal-container modal">
+                <div
+                  class="overflow-y-scroll scroll-hide-1700  max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    Personal Logo Project
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium"> Logo Desing</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Tools :&nbsp;
+                        <span class="font-medium">Canva</span>
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                        <span class="font-medium">Personal Work</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        Preview :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          Not Available for Preview
+                          <!-- <a href="https://www.envato.com/" target="_blank" rel="noopener noreferrer">www.envato.com</a> -->
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    I designed these logos as a personal project to enhance my skills in graphic design. 
+                    These logos are created to reflect my creative expression and unique style. 
+                    I utilized Canva as the primary tool to bring my ideas to life, allowing me 
+                    to experiment with different design elements and layouts.
+                  </p>
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/2.jpg"
+                      alt="portfolio image" />
+                  </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+              <!-- *************** 3. portfolio items three start *************** -->
+              <div class="portfolio_list-two-items isotop-item branding ">
+                <div class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloThree" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/3.jpg" alt="portfolio image" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Logo</span>
+                  <h2
+                    class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloThree" rel="modal:open">
+                      Personal Design
+                    </a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item three start -->
+              <div id="portfiloThree" class="modal-container modal">
+                <div
+                  class="overflow-y-scroll scroll-hide-1700  max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    Personal Logo Design Project
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium">  Logo Design </span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Tools :&nbsp;
+                        <span class="font-medium">Canva</span>
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                        <span class="font-medium">Personal Work</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        Preview :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          Not Available for Preview
+                          <!-- <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer">www.example.com</a> -->
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    I designed these logos as a personal project to enhance my skills in graphic design. These logos are
+                      created to reflect my creative expression and unique style. I utilized Canva as the primary tool to bring my
+                      ideas to life, allowing me to experiment with different design elements and layouts.
+                  </p>
+                  </p>
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/3.jpg"
+                      alt="portfolio image" />
+                  </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+              <!-- *************** 4. portfolio items four start *************** -->
+              <div class="portfolio_list-two-items isotop-item custom ">
+                <div class="rounded-lg p-6 bg-[#e9faff] dark:bg-transparent dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloFour" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/4.jpg" alt="portfolio image" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"> Website </span>
+                  <h2
+                    class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloFour" rel="modal:open"> Disney+ Hotstar Clone
+                    </a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item one start -->
+              <div id="portfiloFour" class="modal-container modal">
+                <div
+                  class="overflow-y-scroll scroll-hide-1700  max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    Disney+ Hotstar Clone Project
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium"> Website</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Langages :&nbsp;
+                        <span class="font-medium">HTML, CSS, JavaScript</span>
+                      </p>
+                    </div>
+
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                        <span class="font-medium">7 Days Bootcamp Project</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        Preview :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          <a href="https://yugal-kosamshile.github.io/Hotstar_Clone_Website/" target="_blank" rel="noopener noreferrer">Disney+ Hotstar Clone</a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    Developed a clone of the popular streaming service Disney+ Hotstar using HTML, CSS, and
+                    JavaScript. Populated it with content and implemented basic functionalities to simulate 
+                    a real streaming service experience
+                  </p>
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/4.jpg"
+                      alt="portfolio image" />
+                  </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+               <!-- *************** 5. portfolio items five start *************** -->
+              <div class="portfolio_list-two-items isotop-item custom ">
+                <div class="rounded-lg bg-[#fffae9] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloFive" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/5.jpg" alt="portfolio image" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Website</span>
+                  <h2
+                    class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloFive" rel="modal:open"> GameOn! 🎮</a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item five start -->
+              <div id="portfiloFive" class="modal-container modal">
+                <div
+                  class="overflow-y-scroll scroll-hide-1700  max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    GameOn! 🎮 - Interactive Web Games
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium"> Website</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Langages :&nbsp;
+                        <span class="font-medium">HTML, CSS, JS, Bootstrap</span>
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                        <span class="font-medium">Personal Work</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        Preview :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          <a href="https://interactive-web-game.netlify.app/" target="_blank" rel="noopener noreferrer">GameOn! 🎮</a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    Welcome to GameOn! 🎮 - a one-stop platform for engaging web games. Includes puzzles, 
+                    action games, and strategy games. Designed with a user-friendly interface, it offers 
+                    multiplayer modes and regular updates to ensure a dynamic gaming experience.
+                  </p>
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/5.jpg"
+                      alt="portfolio image" />
+                  </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+              <!-- *************** 6. portfolio items Six start *************** -->
+              <div class="portfolio_list-two-items isotop-item custom ">
+                <div class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                        <a href="#portfiloSix" rel="modal:open">
+                            <img
+                                class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                                src="images/work_images/small/6.jpg" alt="portfolio image" />
+                        </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Spring Boot MVC</span>
+                    <h2
+                        class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                        <a href="#portfiloSix" rel="modal:open">Employee Management System</a>
+                    </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item six start -->
+              <div id="portfiloSix" class="modal-container modal">
+                <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                        Employee Management System
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                        <div class="space-y-2">
+                            <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                                <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                                Project :&nbsp;
+                                <span class="font-medium">Web Application</span>
+                            </p>
+                            <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                                <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                                Langages :&nbsp;
+                                <span class="font-medium">Java, Spring Boot, HTML, CSS, JavaScript</span>
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                                <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                                <span class="font-medium">Personal Project</span>
+                            </p>
+                            <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                                Github :&nbsp;
+                                <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                                    <a href="https://github.com/Yugal-kosamshile/Emp-Management_mvc_project/tree/main" target="_blank" rel="noopener noreferrer">Employee Management System</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                        Welcome to the Employee Management System! This platform empowers you to manage employee data effortlessly and effectively. 
+                        Designed with user-friendliness in mind, it provides a comprehensive suite of tools to streamline all aspects of employee management.
+                        Whether you're a manager or an HR professional, this system simplifies tasks like viewing, searching, and updating employee details.
+                    </p>
+                    <div class="product-info dark:text-white text-[15px] sm:text-sm">
+                        <p>Our platform allows you to:</p>
+                        <ul class="list-disc ml-5">
+                            <li><strong>Manage Employee Records:</strong> Add, update, or delete employee information.</li>
+                            <li><strong>Search Employees:</strong> Find employees by name, department, or role.</li>
+                            <li><strong>Department Management:</strong> Organize employees into departments for better structure.</li>
+                        </ul>
+                        <p>Our mission is to streamline employee management, ensuring a smooth workflow and fostering organizational success. Experience the ease of modern employee data management with our system.</p>
+                    </div>
+                    <div class="pr-3">
+                        <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/6.jpg"
+                            alt="portfolio image" />
+                    </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+             <!-- *************** 7. portfolio items seven start *************** -->
+              <div class="portfolio_list-two-items isotop-item custom">
+                <div class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloSeven" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/7.jpg" alt="Hospital Management System" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Spring Boot</span>
+                  <h2
+                    class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloSeven" rel="modal:open"> Hospital Management System </a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item Seven start -->
+              <div id="portfiloSeven" class="modal-container modal">
+                <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    Hospital Management System
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium"> Web Application </span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Languages :&nbsp;
+                        <span class="font-medium"> Java, Spring Boot, HTML, CSS, JavaScript </span>
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                        <span class="font-medium">Personal Project</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        GitHub :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          <a href="https://github.com/Yugal-kosamshile/Hospital-Management-System-Rest-API/tree/main" target="_blank" rel="noopener noreferrer">Hospital Management System API</a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    The Hospital Management System is a web-based platform built using Spring Boot. It allows administrators to manage hospital information, including adding, retrieving, updating, and deleting hospital records. It also includes advanced search capabilities by location, rating, and more, providing a seamless user experience.
+                  </p>
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/7.jpg"
+                      alt="Hospital Management System" />
+                  </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+              <!-- *************** 8. portfolio items Eight start *************** -->
+              <div class="portfolio_list-two-items isotop-item custom">
+                <div class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloEight" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/8.jpg" alt="portfolio image" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"> Web Application </span>
+                  <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloEight" rel="modal:open"> Waste Management System </a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item Eight start -->
+              <div id="portfiloEight" class="modal-container modal">
+                <div class="overflow-y-scroll scroll-hide-1700  max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    Waste Management System Web Application
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium"> Waste Management System </span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Tools :&nbsp;
+                        <span class="font-medium">HTML, CSS, JavaScript, PHP, MySQL</span>
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                        <span class="font-medium">Final Year Project</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        GitHub :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          <a href="https://github.com/Yugal-kosamshile/waste_management_web_app" target="_blank" rel="noopener noreferrer">Waste Management System</a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    The Waste Management System Web Application is a user-friendly platform designed to streamline waste complaint registration and resolution. It allows users to report waste-related issues and provides two types of solutions:
+                    <ul>
+                      <li><strong>Government-Sponsored Free Solutions</strong>: Utilizing public resources.</li>
+                      <li><strong>Private Paid Solutions</strong>: Using advanced waste disposal techniques like recycling and waste-to-energy technologies.</li>
+                    </ul>
+                    The system also leverages data analytics to optimize waste management efforts, reduce environmental impact, and empower communities to participate actively in sustainable waste practices.
+                  </p>
+
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/8.jpg"
+                      alt="Waste Management Web Application Image" />
+                  </div>
+
+                  <h3 class="mt-4 text-xl font-medium">Technologies Used:</h3>
+                  <ul class="list-disc pl-5 dark:text-white">
+                    <li>Frontend: HTML, CSS, JavaScript</li>
+                    <li>Backend: PHP, MySQL</li>
+                    <li>Responsive Design: Bootstrap</li>
+                  </ul>
+
+                  <h3 class="mt-4 text-xl font-medium">Features:</h3>
+                  <ul class="list-disc pl-5 dark:text-white">
+                    <li>Easy-to-use interface for complaint registration.</li>
+                    <li>Government and private solution pathways for waste management.</li>
+                    <li>Data analytics for optimized resource allocation and decision-making.</li>
+                    <li>Eco-friendly and sustainable solutions to reduce environmental impact.</li>
+                  </ul>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+
+               <!-- *************** 9. portfolio items Nine start *************** -->
+              <div class="portfolio_list-two-items isotop-item custom ">
+                <div class="rounded-lg bg-[#fff0f8] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="#portfiloNine" rel="modal:open">
+                      <img
+                        class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                        src="images/work_images/small/9.jpg" alt="portfolio image" />
+                    </a>
+                  </div>
+                  <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Web Design Project</span>
+                  <h2
+                    class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                    <a href="#portfiloNine" rel="modal:open"> Simple Webpages Collection </a>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- modal start for item Nine start -->
+              <div id="portfiloNine" class="modal-container modal">
+                <div
+                  class="overflow-y-scroll scroll-hide-1700  max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                  <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                    Simple Webpages Collection
+                  </h2>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                        Project :&nbsp;
+                        <span class="font-medium"> Website</span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                        Langages :&nbsp;
+                        <span class="font-medium">HTML, CSS, JS, Bootstrap</span>
+                      </p>
+                    </div>
+
+                    <div class="space-y-2">
+                      <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                        <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                         <span class="font-medium"> Personal Work </span>
+                      </p>
+                      <p class="dark:text-white flex items-center text-[15px] sm:text-lg">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                        Preview :&nbsp;
+                        <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                          <a href="https://yugal-kosamshile.github.io/Simple_webpages/" target="_blank" rel="noopener noreferrer">Simple Webpages</a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                    This website contains a collection of simple webpages demonstrating 
+                    fundamental web development skills. Each webpage is built with a 
+                    focus on simplicity, covering concepts like layout design, navigation, and basic interactivity.
+                  </p>
+                  <div class="pr-3">
+                    <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/9.jpg"
+                      alt="portfolio image" />
+                  </div>
+                </div>
+                <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer start -->
+          <footer class="overflow-hidden rounded-b-2xl bg-[#f8fbfb] dark:bg-[#212425]">
+            <p class="text-center py-6 text-gray-lite dark:text-color-910">
+              © 2022 All Rights Reserved by
+              <a class="hover:text-[#FA5252] duration-300 transition" href="#"
+                target="_blank" rel="noopener noreferrer">❤️Yugal Kosamshile</a>.
+            </p>
+          </footer>
+          <!-- footer ends -->
+        </section>
+        <!-- portfolio ends  -->
+      </div>
+    </div>
+  </div>
+
+
+  <!--=== js ===-->
+  <script src="js/vendor/jquary.min.js"></script>
+  <script src="js/vendor/jquery.modal.min.js"></script>
+  <script src="js/vendor/isotope.pkgd.min.js"></script>
+  <!--=== main js  ===-->
+  <script src="js/main.js"></script>
+
+
+</body>
+
+
+</html>
