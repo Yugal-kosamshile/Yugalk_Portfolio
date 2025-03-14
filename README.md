@@ -20,7 +20,7 @@ This is a personal portfolio website built using HTML, CSS, and JavaScript to sh
 
 ## 📷 Screenshots
 
-*(Add screenshots of your portfolio website to showcase the design and layout.)*
+![Portfolio Screenshot](img/ss.png)
 
 ## 🏆 Live Demo
 
