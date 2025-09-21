@@ -10,17 +10,12 @@ This is a personal portfolio website built using HTML, CSS, and JavaScript to sh
 - **Projects Showcase** – Displays detailed information about my projects.
 - **Skills & Experience** – Highlights my technical and professional expertise.
 - **Contact Form** – Allows visitors to reach out easily.
-- **Smooth Animations** – Enhances user experience with CSS and JavaScript animations.
 
 ## 🛠️ Technologies Used
 
 - **HTML** – Structure of the website
 - **CSS** – Styling and layout
-- **JavaScript** – Interactivity and animations
-
-## 📷 Screenshots
-
-![Portfolio Screenshot](img/ss.png)
+- **JavaScript** – Interactivity
 
 ## 🏆 Live Demo
 
