@@ -1,287 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugal Kosamshile - Portfolio</title>
+    <link rel="icon" href="/image/logo.png" type="image/png">
 
-        <!-- =====BOX ICONS===== -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Yugal</a>
-                </div>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Yugal</span><br> Web Designer</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="http://www.linkedin.com/in/yugal-kosamshile-02yk2002" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="./assets/Yugal_Kosamshile__Resume.pdf" class="home__social-icon"><i class='bx bx-briefcase' ></i></a>
-                    <a href="https://github.com/Yugal-kosamshile" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Yugal</h2>
-                        <p class="about__text">A highly motivated Computer Science graduate with a strong interest in software development. Seeking to
-                            leverage my skills in a dynamic IT environment where I can contribute to impactful projects.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-            
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills__text">Below is a summary of my expertise, showcasing the tools, frameworks, and technologies I have mastered.</p>
-                        
-                        <!-- Programming Languages -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fab fa-java skills__icon"></i>
-                                <span class="skills__name">Java</span>
-                            </div>
-                            <div class="skills__bar skills__java"></div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-alt skills__icon'></i>
-                                <span class="skills__name">C</span>
-                            </div>
-                            <div class="skills__bar skills__c"></div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-            
-                        <!-- Web Development -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML</span>
-                            </div>
-                            <div class="skills__bar skills__html"></div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS</span>
-                            </div>
-                            <div class="skills__bar skills__css"></div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon'></i>
-                                <span class="skills__name">JavaScript</span>
-                            </div>
-                            <div class="skills__bar skills__js"></div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-            
-                        <!-- Database -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-data skills__icon'></i>
-                                <span class="skills__name">SQL (Oracle)</span>
-                            </div>
-                            <div class="skills__bar skills__sql"></div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h2 class="skills__subtitle">Tools & Frameworks</h2>
-                        <p class="skills__text">I am proficient with a variety of tools and frameworks used in development.</p>
-                        
-                        <!-- Framework -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-layer skills__icon'></i>
-                                <span class="skills__name">Bootstrap</span>
-                            </div>
-                            <div class="skills__bar skills__bootstrap"></div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-            
-                        <!-- Tools -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-block skills__icon'></i>
-                                <span class="skills__name">Visual Studio Code</span>
-                            </div>
-                            <div class="skills__bar skills__vscode"></div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon'></i>
-                                <span class="skills__name">Eclipse</span>
-                            </div>
-                            <div class="skills__bar skills__eclipse"></div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-mobile-alt skills__icon'></i>
-                                <span class="skills__name">Spring Boot</span>
-                            </div>
-                            <div class="skills__bar skills__androidstudio"></div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-            
-                        <!-- Version Control -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-git skills__icon'></i>
-                                <span class="skills__name">Git & GitHub</span>
-                            </div>
-                            <div class="skills__bar skills__git"></div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>        
-                </div>
-            </section>
-            
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="https://0disney-plus-hotstar-clone.netlify.app/" class="work__img">
-                        <img src="./assets/img/2.jpg" alt="">
+<body>
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center bg-no-repeat text-white py-20"
+        style="background-image: url('/image/bg.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Yugal Kosamshile</h1>
+                <p class="font-medium text-xl md:text-2xl mb-8">Full Stack Developer | Java | Spring Boot | SQL |
+                    React.js | HTML | CSS | JS | MySQL</p>
+                <p class="text-lg max-w-2xl mx-auto mb-10">
+                    Conscientious and detail-oriented Computer Science graduate with hands-on
+                    experience in building responsive, user-centric web applications. Skilled in Java,
+                    Spring Boot, React.js, and JavaScript, with strong UI/UX sensibilities and
+                    database management expertise.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact"
+                        class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium shadow-md transition">
+                        Contact Me
                     </a>
-                    <a href="https://interactive-web-game.netlify.app/" class="work__img">
-                        <img src="./assets/img/3.jpg" alt="">
+                    <a href="#projects"
+                        class="border border-white text-white hover:!bg-white hover:!text-indigo-600 px-6 py-3 rounded-lg font-medium shadow-md transition">
+                        View My Work
                     </a>
-                    <a href="https://simple-webpages.netlify.app/" class="work__img">
-                        <img src="./assets/img/7.jpg" alt="">
-                    </a>
-                    <a href="https://github.com/Yugal-kosamshile/RTO-Application" class="work__img">
-                        <img src="./assets/img/1.jpg" alt="">
-                    </a> 
-                    <a href="https://github.com/Yugal-kosamshile/Emp-Management_mvc_project" class="work__img">
-                        <img src="./assets/img/4.jpg" alt="">
-                    </a>
-                    <a href="https://github.com/Yugal-kosamshile/Hospital-Management-System-Rest-API" class="work__img">
-                        <img src="./assets/img/5.jpg" alt="">
-                    </a>
-                    <a href="https://github.com/Yugal-kosamshile/waste_management_web_app" class="work__img">
-                        <img src="./assets/img/6.jpg" alt="">
-                    </a>
-                    
                 </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">❤️Yugalk</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/yugal.kosamshile/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/redimposter18/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.linkedin.com/in/yugal-kosamshile-02yk2002" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <p class="footer__copy">&#169; 2025 Portfolio . All rights are reserved by ❤️Yugal.</p>
-        </footer>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden bg-indigo-100 flex items-center justify-center">
+  <img src="/image/your-photo.png" alt="Profile Picture" class="w-full h-full object-cover">
+</div>
+
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-gray-600 mb-6 text-lg">
+  Hello! I'm a passionate and motivated Computer Science graduate with hands-on experience in building web applications using Java, React.js, Spring Boot and MySQL Database. I enjoy solving problems and learning new technologies.
+</p>
+<p class="text-gray-600 mb-6 text-lg">
+  During my studies and personal projects, I have developed skills in front-end and back-end development, database management, and responsive UI/UX design. I’m eager to contribute to real-world projects and grow as a full-stack developer.
+</p>
+<p class="text-gray-600 mb-8 text-lg">
+  Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and staying up-to-date with industry trends.
+</p>
+
+                    <div class="flex space-x-4">
+                        <a href="mailto:yugalkosamshile2002@gmail.com"
+                            class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 13.065L.004 4.5V20h23.992V4.5L12 13.065zm0-2.13L23.992 2H.004L12 10.935z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.338 16.338H13.67V12.16c0-1-.02-2.285-1.39-2.285-1.39 0-1.601 1.087-1.601 2.21v4.253H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">My Projects</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Here are some of the projects I've worked on. Each project
+                    represents a unique challenge and solution.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 --> 
+<div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
+    <div class="h-65 bg-indigo-100 flex items-center justify-center">
+        <img src="/image/project1.jpg" alt="MH-RTO Mobile Application" class="h-full object-cover w-full">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">MH-RTO Mobile Application</h3>
+        <p class="text-gray-600 mb-4">
+            Developed an Android application to provide comprehensive information about Regional Transport Offices (RTO) in Maharashtra. 
+            This Android application provides information about Road Transport Office (RTO) rules, violations, and office locations through a user-friendly interface. 
+            Users can view PDF documents with detailed information for each section: rules, violations, and RTO office details. 
+            The app also includes an "About" page for additional information about the app or organization.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Java</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">XML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Android Studio</span>
+        </div>
+        <a href="https://github.com/Yugal-kosamshile/RTO-Application" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+            View Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+        </a>
+    </div>
+</div> 
+                <!-- Project 2 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
+    <div class="h-65 bg-indigo-100 flex items-center justify-center">
+        <img src="/image/project2.jpg" alt="Disney+ Hotstar Clone Project" class="h-full w-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Disney+ Hotstar Clone Project</h3>
+        <p class="text-gray-600 mb-4">
+            Developed a clone of the popular streaming service Disney+ Hotstar using HTML, CSS, and JavaScript. 
+            Populated it with content and implemented basic functionalities to simulate a real streaming service experience. 
+            Enhanced the UI with responsive design for seamless viewing across devices. 
+            Optimized page layouts and interactions to improve user engagement and overall usability.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+        </div>
+        <a href="https://0disney-plus-hotstar-clone.netlify.app/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+            View Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+        </a>
+    </div>
+</div> 
+
+                <!-- Project 3 --> 
+<div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
+    <div class="h-65 bg-indigo-100 flex items-center justify-center">
+        <img src="/image/project3.jpg" alt="GameOn! 🎮 - Interactive Web Games" class="h-full w-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">GameOn! 🎮 - Interactive Web Games</h3>
+        <p class="text-gray-600 mb-4">
+            Welcome to GameOn! 🎮 - a one-stop platform for engaging web games. Includes puzzles, action games, and strategy games. 
+            Designed with a user-friendly interface, it offers multiplayer modes and regular updates to ensure a dynamic gaming experience. 
+            Optimized for performance and responsiveness to work smoothly across devices. 
+            Integrated intuitive navigation and visual feedback to enhance player engagement and satisfaction.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
+        </div>
+        <a href="https://interactive-web-game.netlify.app/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+            Live Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<!-- Project 4 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
+    <div class="h-65 bg-indigo-100 flex items-center justify-center">
+        <img src="/image/project4.jpg" alt="Food Mart | React Application" class="h-full w-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Food Mart | React Application</h3>
+        <p class="text-gray-600 mb-4">
+            Built a dynamic online grocery platform using React.js with efficient state management. 
+            Implemented features like product filtering, cart functionality, and coupon application. 
+            Designed responsive UI with reusable components and optimized performance. 
+            Integrated order tracking and purchase history functionality.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
+        </div>
+        <a href="https://foodmartyk.vercel.app/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+            Live Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">My Skills</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">I've developed expertise in various technologies and
+                    methodologies throughout my career.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Technical Skills --> 
+<div>
+    <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Technical Skills</h3>
+    
+    <!-- Skill Progress Bars -->
+    <div class="space-y-4">
+        <div>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-700">Java</span>
+                <span class="text-gray-600">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-indigo-600 h-2 rounded-full" style="width: 80%"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-700">HTML/CSS</span>
+                <span class="text-gray-600">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-700">JavaScript</span>
+                <span class="text-gray-600">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-700">React.js</span>
+                <span class="text-gray-600">70%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-indigo-600 h-2 rounded-full" style="width: 70%"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-700">Spring Boot</span>
+                <span class="text-gray-600">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Additional Skills List -->
+    <div class="mt-8">
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Other Skills</h4>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li><strong>Languages:</strong> Java, JavaScript</li>
+            <li><strong>Front-End:</strong> HTML5, CSS3, Bootstrap, React.js</li>
+            <li><strong>Back-End:</strong> Spring Boot</li>
+            <li><strong>Database:</strong> Oracle SQL, MySQL</li>
+            <li><strong>Tools:</strong> Git, GitHub, Eclipse, VS Code</li>
+        </ul>
+    </div>
+</div>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+                <!-- Soft Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <span
+                            class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Problem
+                            Solving</span>
+                        <span
+                            class="bg-purple-50 text-purple-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Communication</span>
+                        <span
+                            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Teamwork</span>
+                        <span
+                            class="bg-green-50 text-green-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Time
+                            Management</span>
+                        <span
+                            class="bg-yellow-50 text-yellow-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Adaptability</span>
+                        <span
+                            class="bg-red-50 text-red-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Creativity</span>
+                        <span
+                            class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Critical
+                            Thinking</span>
+                        <span
+                            class="bg-purple-50 text-purple-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Attention
+                            to Detail</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">Get In Touch</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind or want to collaborate? Feel free to
+                    reach out!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Send Me a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                placeholder="Your message here..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors">Send
+                                Message</button>
+                        </div>
+                    </form>
+                    <div id="form-message" class="mt-4 text-center hidden"></div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-900 font-medium">Email</p>
+                                <p class="text-gray-600">ykosamshile@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-900 font-medium">Phone</p>
+                                <p class="text-gray-600">+91 992-337-5997</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-900 font-medium">Location</p>
+                                <p class="text-gray-600">Chandrapur, Maharashtra, India</p>
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <p class="text-gray-700 mb-4">Connect with me on social media:</p>
+                            <div class="flex space-x-4">
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/yugal-kosamshile" target="_blank"
+                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.78v2.2h.07c.66-1.25 2.28-2.57 4.7-2.57 5.03 0 5.97 3.3 5.97 7.6V24h-5V16c0-1.91-.03-4.37-2.66-4.37-2.66 0-3.07 2.08-3.07 4.23V24h-5V8z" />
+                                    </svg>
+                                </a>
+
+                                <!-- GitHub -->
+                                <a href="https://github.com/Yugal-kosamshile" target="_blank"
+                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.805 1.305 3.49.998.108-.776.418-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.465-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 016 0c2.29-1.552 3.295-1.23 3.295-1.23.655 1.652.243 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.43.372.815 1.102.815 2.222 0 1.604-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 21.795 24 17.297 24 12c0-6.63-5.373-12-12-12z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+
+                                <!-- Email -->
+                                <a href="mailto:yugalkosamshile2002@gmail.com"
+                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 13.065L.004 4.5V20h23.992V4.5L12 13.065zm0-2.13L23.992 2H.004L12 10.935z" />
+                                    </svg>
+                                </a>
+
+                                <!-- Facebook -->
+                                <a href="https://facebook.com" target="_blank"
+                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.495V14.708h-3.13v-3.622h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.406 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+                                    </svg>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://instagram.com" target="_blank"
+                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
+                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.43.41a4.92 4.92 0 011.675 1.096 4.92 4.92 0 011.096 1.675c.17.46.354 1.26.41 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.41 2.43a4.92 4.92 0 01-1.096 1.675 4.92 4.92 0 01-1.675 1.096c-.46.17-1.26.354-2.43.41-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.43-.41a4.92 4.92 0 01-1.675-1.096 4.92 4.92 0 01-1.096-1.675c-.17-.46-.354-1.26-.41-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.41-2.43a4.92 4.92 0 011.096-1.675 4.92 4.92 0 011.675-1.096c.46-.17 1.26-.354 2.43-.41C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.78.13 4.868.308 4.092.55a6.928 6.928 0 00-2.502 1.634A6.928 6.928 0 00.55 4.092c-.242.776-.42 1.688-.478 2.96C0 8.332 0 8.741 0 12s.014 3.668.072 4.948c.058 1.272.236 2.184.478 2.96a6.928 6.928 0 001.634 2.502 6.928 6.928 0 002.502 1.634c.776.242 1.688.42 2.96.478C8.332 24 8.741 24 12 24s3.668-.014 4.948-.072c1.272-.058 2.184-.236 2.96-.478a6.928 6.928 0 002.502-1.634 6.928 6.928 0 001.634-2.502c.242-.776.42-1.688.478-2.96.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.058-1.272-.236-2.184-.478-2.96a6.928 6.928 0 00-1.634-2.502 6.928 6.928 0 00-2.502-1.634c-.776-.242-1.688-.42-2.96-.478C15.668 0 15.259 0 12 0z" />
+                                        <circle cx="12" cy="12" r="3.6" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Yugal Kosamshile</h2>
+                    <p class="text-gray-400 mt-2">Software Engineer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="mailto:yugalkosamshile2002@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 13.065L.004 4.5V20h23.992V4.5L12 13.065zm0-2.13L23.992 2H.004L12 10.935z" />
+                                    </svg>
+                    </a>
+                    <a href="https://github.com/Yugal-kosamshile" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yugal-kosamshile" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">&copy; 2025 Yugal Kosamshile. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <!-- <ul class="flex space-x-6">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Contact form handling
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if (!name || !email || !message) {
+                formMessage.textContent = 'Please fill in all fields.';
+                formMessage.className = 'mt-4 text-center text-red-600';
+                formMessage.classList.remove('hidden');
+                return;
+            }
+
+            // In a real application, you would send this data to a server
+            // For this demo, we'll just show a success message
+            formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
+            formMessage.className = 'mt-4 text-center text-green-600';
+            formMessage.classList.remove('hidden');
+
+            // Reset form
+            contactForm.reset();
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+
 </html>
