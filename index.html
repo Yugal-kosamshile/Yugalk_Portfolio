@@ -6,17 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yugal Kosamshile - Portfolio</title>
     <link rel="icon" href="./image/logo.png" type="image/png">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+
+  .skill-pill {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .skill-pill:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  } 
+
+</style>
 </head>
 
 <body>
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center bg-no-repeat text-white py-20"
+    <section class="animate-fadeIn relative bg-cover bg-center bg-no-repeat text-white py-20"
         style="background-image: url('./image/bg.jpeg');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,120 +93,135 @@
                         staying up-to-date with industry trends.
                     </p>
 
-                    <div class="flex space-x-4">
-                        <a href="mailto:yugalkosamshile2002@gmail.com"
-                            class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                            <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 13.065L.004 4.5V20h23.992V4.5L12 13.065zm0-2.13L23.992 2H.004L12 10.935z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                            <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                            <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.338 16.338H13.67V12.16c0-1-.02-2.285-1.39-2.285-1.39 0-1.601 1.087-1.601 2.21v4.253H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </div>
+                   <div class="flex space-x-4">
+    <!-- Email -->
+    <a href="mailto:yugalkosamshile2002@gmail.com"
+        class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-indigo-600 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path d="M12 13.065L.004 4.5V20h23.992V4.5L12 13.065zm0-2.13L23.992 2H.004L12 10.935z" />
+        </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a href="#" class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:-rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-indigo-600 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="#" class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-indigo-600 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                d="M16.338 16.338H13.67V12.16c0-1-.02-2.285-1.39-2.285-1.39 0-1.601 1.087-1.601 2.21v4.253H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </a>
+</div>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800">My Projects</h2>
-                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Here are some of the projects I've worked on. Each project
-                    represents a unique challenge and solution.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
-                    <div class="h-65 bg-indigo-100 flex items-center justify-center">
-                        <img src="./image/project1.jpg" alt="MH-RTO Mobile Application"
-                            class="h-full object-cover w-full">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">MH-RTO Mobile Application</h3>
-                        <p class="text-gray-600 mb-4">
-                            Developed an Android application to provide comprehensive information about Regional
+     <section id="projects" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">My Projects</h2>
+      <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-6"></div>
+      <p class="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
+        Here are some of the projects I've worked on. Each project represents a unique challenge and solution.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div
+        class="bg-white rounded-xl overflow-hidden shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <div class="h-60 bg-indigo-100 overflow-hidden">
+          <img src="/image/project1.jpg" alt="MH-RTO Mobile Application"
+            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">MH-RTO Mobile Application</h3>
+          <p class="text-gray-600 text-sm sm:text-base flex-grow mb-4">
+           Developed an Android application to provide comprehensive information about Regional
                             Transport Offices (RTO) in Maharashtra.
                             This Android application provides information about Road Transport Office (RTO) rules,
                             violations, and office locations through a user-friendly interface.
                             Users can view PDF documents with detailed information for each section: rules, violations,
                             and RTO office details.
-                            The app also includes an "About" page for additional information about the app or
-                            organization.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Java</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">XML</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Android
-                                Studio</span>
-                        </div>
-                        <a href="https://github.com/Yugal-kosamshile/RTO-Application" target="_blank"
-                            class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
-                            View Project
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
-                    <div class="h-65 bg-indigo-100 flex items-center justify-center">
-                        <img src="./image/project2.jpg" alt="Disney+ Hotstar Clone Project"
-                            class="h-full w-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Disney+ Hotstar Clone Project</h3>
-                        <p class="text-gray-600 mb-4">
-                            Developed a clone of the popular streaming service Disney+ Hotstar using HTML, CSS, and
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Java</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">XML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Android Studio</span>
+          </div>
+          <a href="https://github.com/Yugal-kosamshile/RTO-Application" target="_blank"
+            class="inline-flex items-center text-indigo-600 font-medium transition hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded-md px-2 py-1">
+            View Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div
+        class="bg-white rounded-xl overflow-hidden shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <div class="h-60 bg-indigo-100 overflow-hidden">
+          <img src="/image/project2.jpg" alt="Disney+ Hotstar Clone Project"
+            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Disney+ Hotstar Clone</h3>
+          <p class="text-gray-600 text-sm sm:text-base flex-grow mb-4">
+            Developed a clone of the popular streaming service Disney+ Hotstar using HTML, CSS, and
                             JavaScript.
                             Populated it with content and implemented basic functionalities to simulate a real streaming
                             service experience.
                             Enhanced the UI with responsive design for seamless viewing across devices.
                             Optimized page layouts and interactions to improve user engagement and overall usability.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
-                        </div>
-                        <a href="https://0disney-plus-hotstar-clone.netlify.app/" target="_blank"
-                            class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
-                            View Project
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+          <a href="https://0disney-plus-hotstar-clone.netlify.app/" target="_blank"
+            class="inline-flex items-center text-indigo-600 font-medium transition hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded-md px-2 py-1">
+            Live Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-                <!-- Project 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
-                    <div class="h-65 bg-indigo-100 flex items-center justify-center">
-                        <img src="./image/project3.jpg" alt="GameOn! 🎮 - Interactive Web Games"
-                            class="h-full w-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">GameOn! 🎮 - Interactive Web Games</h3>
-                        <p class="text-gray-600 mb-4">
-                            Welcome to GameOn! 🎮 - a one-stop platform for engaging web games. Includes puzzles, action
+      <!-- Project 3 -->
+      <div
+        class="bg-white rounded-xl overflow-hidden shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <div class="h-60 bg-indigo-100 overflow-hidden">
+          <img src="/image/project3.jpg" alt="GameOn! - Interactive Web Games"
+            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">GameOn! 🎮 - Web Games</h3>
+          <p class="text-gray-600 text-sm sm:text-base flex-grow mb-4">
+             Welcome to GameOn! 🎮 - a one-stop platform for engaging web games. Includes puzzles, action
                             games, and strategy games.
                             Designed with a user-friendly interface, it offers multiplayer modes and regular updates to
                             ensure a dynamic gaming experience.
@@ -197,89 +229,90 @@
                             Integrated intuitive navigation and visual feedback to enhance player engagement and
                             satisfaction.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JS</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
-                        </div>
-                        <a href="https://interactive-web-game.netlify.app/" target="_blank"
-                            class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
-                            Live Project
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
+          </div>
+          <a href="https://interactive-web-game.netlify.app/" target="_blank"
+            class="inline-flex items-center text-indigo-600 font-medium transition hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded-md px-2 py-1">
+            Live Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-                <!-- Project 4 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
-                    <div class="h-65 bg-indigo-100 flex items-center justify-center">
-                        <img src="./image/project4.jpg" alt="Food Mart | React Application"
-                            class="h-full w-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Food Mart | React Application</h3>
-                        <p class="text-gray-600 mb-4">
-                            Built a dynamic online grocery platform using React.js with efficient state management.
+      <!-- Project 4 -->
+      <div
+        class="bg-white rounded-xl overflow-hidden shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <div class="h-60 bg-indigo-100 overflow-hidden">
+          <img src="/image/project4.jpg" alt="Food Mart React Application"
+            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Food Mart | React App</h3>
+          <p class="text-gray-600 text-sm sm:text-base flex-grow mb-4">
+            Built a dynamic online grocery platform using React.js with efficient state management.
                             Implemented features like product filtering, cart functionality, and coupon application.
                             Designed responsive UI with reusable components and optimized performance.
                             Integrated order tracking and purchase history functionality.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JS</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
-                        </div>
-                        <a href="https://foodmartyk.vercel.app/" target="_blank"
-                            class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
-                            Live Project
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
+          </div>
+          <a href="https://foodmartyk.vercel.app/" target="_blank"
+            class="inline-flex items-center text-indigo-600 font-medium transition hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded-md px-2 py-1">
+            Live Project
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-                <!-- Project 5 -->
-<div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition-all duration-300">
-    <div class="h-65 bg-indigo-100 flex items-center justify-center">
-        <img src="/image/project5.jpg" alt="IT-Master" class="h-full w-full object-cover">
-    </div>
-    <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">IT-Master</h3>
-        <p class="text-gray-600 mb-4">
+       <!-- Project 5 -->
+      <div
+        class="bg-white rounded-xl overflow-hidden shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <div class="h-60 bg-indigo-100 overflow-hidden">
+          <img src="/image/project5.jpg" alt="IT-Master"
+            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">IT-Master</h3>
+          <p class="text-gray-600 text-sm sm:text-base flex-grow mb-4">
             Created dynamic UI with React and Bootstrap for course browsing and enrollment. 
             Built Spring Boot backend with REST APIs for user and admin features. 
             Managed data with Oracle DB for courses, users, and enrollments. 
             Implemented secure authentication and authorization for different user roles. 
             Optimized performance and scalability to handle large volumes of courses and users efficiently.
         </p>
-        <div class="flex flex-wrap gap-2 mb-4">
+          <div class="flex flex-wrap gap-2 mb-4">
             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML</span>
             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
-            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JS</span>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
-            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">MySQL</span>
-            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Spring Boot</span>
-        </div>
-        <a href="https://it-master.vercel.app/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+          </div>
+          <a href="https://it-master.vercel.app/" target="_blank"
+            class="inline-flex items-center text-indigo-600 font-medium transition hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded-md px-2 py-1">
             Live Project
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
             </svg>
-        </a>
-    </div>
-</div>
-
-            </div>
+          </a>
         </div>
-    </section>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-white">
@@ -296,58 +329,59 @@
                 <div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Technical Skills</h3>
 
-                    <!-- Skill Progress Bars -->
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700">Java</span>
-                                <span class="text-gray-600">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700">HTML/CSS</span>
-                                <span class="text-gray-600">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
+                    <!-- Skill Progress Bars --> 
+<div id="skills" class="space-y-6"> 
+  <div>
+    <div class="flex justify-between mb-1">
+      <span class="text-gray-700">Java</span>
+      <span class="text-gray-600">80%</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-2">
+      <div class="bg-indigo-600 h-2 rounded-full progress-bar" data-width="80%"></div>
+    </div>
+  </div>
 
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700">JavaScript</span>
-                                <span class="text-gray-600">75%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
+  <div>
+    <div class="flex justify-between mb-1">
+      <span class="text-gray-700">HTML/CSS</span>
+      <span class="text-gray-600">85%</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-2">
+      <div class="bg-indigo-600 h-2 rounded-full progress-bar" data-width="85%"></div>
+    </div>
+  </div>
 
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700">React.js</span>
-                                <span class="text-gray-600">70%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 70%"></div>
-                            </div>
-                        </div>
+  <div>
+    <div class="flex justify-between mb-1">
+      <span class="text-gray-700">JavaScript</span>
+      <span class="text-gray-600">75%</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-2">
+      <div class="bg-indigo-600 h-2 rounded-full progress-bar" data-width="75%"></div>
+    </div>
+  </div>
 
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700">Spring Boot</span>
-                                <span class="text-gray-600">75%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
+  <div>
+    <div class="flex justify-between mb-1">
+      <span class="text-gray-700">React.js</span>
+      <span class="text-gray-600">70%</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-2">
+      <div class="bg-indigo-600 h-2 rounded-full progress-bar" data-width="70%"></div>
+    </div>
+  </div>
 
-                    </div>
+  <div>
+    <div class="flex justify-between mb-1">
+      <span class="text-gray-700">Spring Boot</span>
+      <span class="text-gray-600">75%</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-2">
+      <div class="bg-indigo-600 h-2 rounded-full progress-bar" data-width="75%"></div>
+    </div>
+  </div>
+
+</div>
 
                     <!-- Additional Skills List -->
                     <div class="mt-8">
@@ -362,33 +396,39 @@
                     </div>
                 </div>
 
-
                 <!-- Soft Skills -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Soft Skills</h3>
-                    <div class="flex flex-wrap gap-3 justify-center">
-                        <span
-                            class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Problem
-                            Solving</span>
-                        <span
-                            class="bg-purple-50 text-purple-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Communication</span>
-                        <span
-                            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Teamwork</span>
-                        <span
-                            class="bg-green-50 text-green-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Time
-                            Management</span>
-                        <span
-                            class="bg-yellow-50 text-yellow-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Adaptability</span>
-                        <span
-                            class="bg-red-50 text-red-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Creativity</span>
-                        <span
-                            class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Critical
-                            Thinking</span>
-                        <span
-                            class="bg-purple-50 text-purple-700 px-4 py-2 rounded-full skill-pill transition-transform duration-300">Attention
-                            to Detail</span>
-                    </div>
-                </div>
+<div>
+  <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Soft Skills</h3>
+  <div class="flex flex-wrap gap-3 justify-center">
+
+    <span class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full skill-pill">
+      Problem Solving
+    </span>
+    <span class="bg-purple-50 text-purple-700 px-4 py-2 rounded-full skill-pill">
+      Communication
+    </span>
+    <span class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full skill-pill">
+      Teamwork
+    </span>
+    <span class="bg-green-50 text-green-700 px-4 py-2 rounded-full skill-pill">
+      Time Management
+    </span>
+    <span class="bg-yellow-50 text-yellow-700 px-4 py-2 rounded-full skill-pill">
+      Adaptability
+    </span>
+    <span class="bg-red-50 text-red-700 px-4 py-2 rounded-full skill-pill">
+      Creativity
+    </span>
+    <span class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full skill-pill">
+      Critical Thinking
+    </span>
+    <span class="bg-purple-50 text-purple-700 px-4 py-2 rounded-full skill-pill">
+      Attention to Detail
+    </span>
+
+  </div>
+</div>
+
             </div>
         </div>
     </section>
@@ -485,54 +525,61 @@
                         </div>
                         <div class="pt-4">
                             <p class="text-gray-700 mb-4">Connect with me on social media:</p>
+                            
                             <div class="flex space-x-4">
-                                <!-- LinkedIn -->
-                                <a href="https://www.linkedin.com/in/yugal-kosamshile" target="_blank"
-                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.78v2.2h.07c.66-1.25 2.28-2.57 4.7-2.57 5.03 0 5.97 3.3 5.97 7.6V24h-5V16c0-1.91-.03-4.37-2.66-4.37-2.66 0-3.07 2.08-3.07 4.23V24h-5V8z" />
-                                    </svg>
-                                </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/yugal-kosamshile" target="_blank"
+        class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:-rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-blue-600 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+                d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.78v2.2h.07c.66-1.25 2.28-2.57 4.7-2.57 5.03 0 5.97 3.3 5.97 7.6V24h-5V16c0-1.91-.03-4.37-2.66-4.37-2.66 0-3.07 2.08-3.07 4.23V24h-5V8z" />
+        </svg>
+    </a>
 
-                                <!-- GitHub -->
-                                <a href="https://github.com/Yugal-kosamshile" target="_blank"
-                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-                                        <path fill-rule="evenodd"
-                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.805 1.305 3.49.998.108-.776.418-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.465-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 016 0c2.29-1.552 3.295-1.23 3.295-1.23.655 1.652.243 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.43.372.815 1.102.815 2.222 0 1.604-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 21.795 24 17.297 24 12c0-6.63-5.373-12-12-12z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </a>
+    <!-- GitHub -->
+    <a href="https://github.com/Yugal-kosamshile" target="_blank"
+        class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-black transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.805 1.305 3.49.998.108-.776.418-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.465-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 016 0c2.29-1.552 3.295-1.23 3.295-1.23.655 1.652.243 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.43.372.815 1.102.815 2.222 0 1.604-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 21.795 24 17.297 24 12c0-6.63-5.373-12-12-12z"
+                clip-rule="evenodd" />
+        </svg>
+    </a>
 
-                                <!-- Email -->
-                                <a href="mailto:yugalkosamshile2002@gmail.com"
-                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 13.065L.004 4.5V20h23.992V4.5L12 13.065zm0-2.13L23.992 2H.004L12 10.935z" />
-                                    </svg>
-                                </a>
+    <!-- Email -->
+    <a href="mailto:yugalkosamshile2002@gmail.com"
+        class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:-rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-red-600 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+                d="M12 13.065L.004 4.5V20h23.992V4.5L12 13.065zm0-2.13L23.992 2H.004L12 10.935z" />
+        </svg>
+    </a>
 
-                                <!-- Facebook -->
-                                <a href="https://facebook.com" target="_blank"
-                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.495V14.708h-3.13v-3.622h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.406 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
-                                    </svg>
-                                </a>
+    <!-- Facebook -->
+    <a href="https://facebook.com" target="_blank"
+        class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-blue-500 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.495V14.708h-3.13v-3.622h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.406 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+        </svg>
+    </a>
 
-                                <!-- Instagram -->
-                                <a href="https://instagram.com" target="_blank"
-                                    class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors">
-                                    <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.43.41a4.92 4.92 0 011.675 1.096 4.92 4.92 0 011.096 1.675c.17.46.354 1.26.41 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.41 2.43a4.92 4.92 0 01-1.096 1.675 4.92 4.92 0 01-1.675 1.096c-.46.17-1.26.354-2.43.41-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.43-.41a4.92 4.92 0 01-1.675-1.096 4.92 4.92 0 01-1.096-1.675c-.17-.46-.354-1.26-.41-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.41-2.43a4.92 4.92 0 011.096-1.675 4.92 4.92 0 011.675-1.096c.46-.17 1.26-.354 2.43-.41C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.78.13 4.868.308 4.092.55a6.928 6.928 0 00-2.502 1.634A6.928 6.928 0 00.55 4.092c-.242.776-.42 1.688-.478 2.96C0 8.332 0 8.741 0 12s.014 3.668.072 4.948c.058 1.272.236 2.184.478 2.96a6.928 6.928 0 001.634 2.502 6.928 6.928 0 002.502 1.634c.776.242 1.688.42 2.96.478C8.332 24 8.741 24 12 24s3.668-.014 4.948-.072c1.272-.058 2.184-.236 2.96-.478a6.928 6.928 0 002.502-1.634 6.928 6.928 0 001.634-2.502c.242-.776.42-1.688.478-2.96.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.058-1.272-.236-2.184-.478-2.96a6.928 6.928 0 00-1.634-2.502 6.928 6.928 0 00-2.502-1.634c-.776-.242-1.688-.42-2.96-.478C15.668 0 15.259 0 12 0z" />
-                                        <circle cx="12" cy="12" r="3.6" />
-                                    </svg>
-                                </a>
-                            </div>
+    <!-- Instagram -->
+    <a href="https://instagram.com" target="_blank"
+        class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:-rotate-6">
+        <svg class="w-5 h-5 text-gray-700 hover:text-pink-500 transition-colors duration-300" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.43.41a4.92 4.92 0 011.675 1.096 4.92 4.92 0 011.096 1.675c.17.46.354 1.26.41 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.41 2.43a4.92 4.92 0 01-1.096 1.675 4.92 4.92 0 01-1.675 1.096c-.46.17-1.26.354-2.43.41-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.43-.41a4.92 4.92 0 01-1.675-1.096 4.92 4.92 0 01-1.096-1.675c-.17-.46-.354-1.26-.41-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.41-2.43a4.92 4.92 0 011.096-1.675 4.92 4.92 0 011.675-1.096c.46-.17 1.26-.354 2.43-.41C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.78.13 4.868.308 4.092.55a6.928 6.928 0 00-2.502 1.634A6.928 6.928 0 00.55 4.092c-.242.776-.42 1.688-.478 2.96C0 8.332 0 8.741 0 12s.014 3.668.072 4.948c.058 1.272.236 2.184.478 2.96a6.928 6.928 0 001.634 2.502 6.928 6.928 0 002.502 1.634c.776.242 1.688.42 2.96.478C8.332 24 8.741 24 12 24s3.668-.014 4.948-.072c1.272-.058 2.184-.236 2.96-.478a6.928 6.928 0 002.502-1.634 6.928 6.928 0 001.634-2.502c.242-.776.42-1.688.478-2.96.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.058-1.272-.236-2.184-.478-2.96a6.928 6.928 0 00-1.634-2.502 6.928 6.928 0 00-2.502-1.634c-.776-.242-1.688-.42-2.96-.478C15.668 0 15.259 0 12 0z" />
+            <circle cx="12" cy="12" r="3.6" />
+        </svg>
+    </a>
+</div>
+
 
                         </div>
                     </div>
@@ -588,72 +635,28 @@
     </footer>
 
     <!-- JavaScript for interactivity -->
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+   <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const progressBars = document.querySelectorAll(".progress-bar");
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const width = bar.getAttribute("data-width");
+          bar.style.transition = "width 2s ease-in-out";
+          bar.style.width = width;
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.5 });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-
-                    // Close mobile menu if open
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
-
-        // Contact form handling
-        const contactForm = document.getElementById('contact-form');
-        const formMessage = document.getElementById('form-message');
-
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Simple validation
-            if (!name || !email || !message) {
-                formMessage.textContent = 'Please fill in all fields.';
-                formMessage.className = 'mt-4 text-center text-red-600';
-                formMessage.classList.remove('hidden');
-                return;
-            }
-
-            // In a real application, you would send this data to a server
-            // For this demo, we'll just show a success message
-            formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
-            formMessage.className = 'mt-4 text-center text-green-600';
-            formMessage.classList.remove('hidden');
-
-            // Reset form
-            contactForm.reset();
-
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                formMessage.classList.add('hidden');
-            }, 5000);
-        });
-    </script>
+    progressBars.forEach(bar => {
+      bar.style.width = "0"; 
+      observer.observe(bar);
+    });
+  });
+</script>
 </body>
 
 </html>
