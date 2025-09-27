@@ -772,33 +772,17 @@
     
     <script>
 
-        var swiper = new Swiper(".mySwiperTools", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next-tools",
-                prevEl: ".swiper-button-prev-tools",
-            },
-            breakpoints: {
-                320: { slidesPerView: 1 },
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 4 },
-            },
-        });
-
         // Technical Skills Swiper
         var swiperTech = new Swiper(".mySwiperTech", {
             slidesPerView: 4,
             spaceBetween: 30,
             loop: true,
+            freeMode: true,
+            speed: 3000,
             autoplay: {
-                delay: 2500,
+                delay: 0,
                 disableOnInteraction: false,
+                 reverseDirection: true,
             },
             navigation: {
                 nextEl: ".swiper-button-next-tech",
@@ -810,6 +794,28 @@
                 1024: { slidesPerView: 4 },
             },
         });
+
+         var swiper = new Swiper(".mySwiperTools", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        freeMode: true,
+        speed: 3000,
+        autoplay: {
+            delay: 0, 
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-tools",
+            prevEl: ".swiper-button-prev-tools",
+        },
+        breakpoints: {
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 4 },
+        },
+        });
+
     </script>
 </body>
 
