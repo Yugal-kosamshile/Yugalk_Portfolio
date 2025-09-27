@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -24,3 +29,20 @@
     transform: scale(1.1) translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+ .hero-bg {
+      background: linear-gradient(to right, #1e3a8a, #2563eb); /* Indigo to Blue */
+    }
+    .timeline-dot {
+      position: absolute;
+      left: 0;
+      top: 1.25rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: #2563eb;
+      border-radius: 9999px;
+    }
+    .timeline-container {
+      position: relative;
+      border-left: 2px solid #e5e7eb;
+    }
