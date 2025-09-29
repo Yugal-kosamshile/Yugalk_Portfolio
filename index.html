@@ -57,10 +57,16 @@
       <a href="#contact" class="hover:text-blue-600">Contact</a>
     </div>
   </nav>
+
     <!-- Hero Section -->
     <section id="hero" class="animate-fadeIn relative bg-cover bg-center bg-no-repeat text-white py-20"
         style="background-image: url('./image/bg.jpeg');">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+         <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="./image/bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Yugal Kosamshile</h1>
@@ -87,6 +93,7 @@
         </div>
     </section>
 
+    
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -157,121 +164,117 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800">Education</h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 mb-8"></div>
+    <!-- Education & Experience Section -->
+    <section id="timeline" class="py-20 bg-gray-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-800">Education & Experience</h2>
+      <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 mb-8"></div>
+    </div>
+
+    <div class="flex flex-col md:flex-row md:space-x-8 space-y-10 md:space-y-0">
+      
+      <!-- Education Column -->
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center md:text-left">Education</h3>
+        
+        <!-- Education Item -->
+        <div class="relative timeline-container pl-10 pb-10">
+          <div class="timeline-dot"></div>
+          <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+              <h4 class="text-xl font-semibold text-gray-800">P. R. Pote Patil College of Engineering, Amravati</h4>
+              <div class="text-blue-600 font-medium mt-2 md:mt-0">2020 – 2024</div>
             </div>
-            <div class="max-w-3xl mx-auto">
-                <div class="relative timeline-container pl-10 pb-10">
-                    <div class="timeline-dot"></div>
-                    <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                            <h3 class="text-xl font-semibold text-gray-800">P. R. Pote Patil College of Engineering, Amravati</h3>
-                            <div class="text-blue-600 font-medium mt-2 md:mt-0">2020 – 2024</div>
-                        </div>
-                        <div class="text-gray-600 mb-1">Amravati University</div>
-                        <p class="text-gray-700">BE in Computer Science, 76.12% | Amravati, Maharashtra</p>
-                    </div>
-                </div>
-                
-                <div class="relative timeline-container pl-10 pb-10">
-                    <div class="timeline-dot"></div>
-                    <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                            <h3 class="text-xl font-semibold text-gray-800">Janata Junior College, Nagbhid</h3>
-                            <div class="text-blue-600 font-medium mt-2 md:mt-0">2019 – 2020</div>
-                        </div>
-                        <div class="text-gray-600 mb-1">Nagpur University</div>
-                        <p class="text-gray-700">HSC, 68.77% | Chandrapur, Maharashtra</p>
-                    </div>
-                </div>
-                
-                <div class="relative timeline-container pl-10">
-                    <div class="timeline-dot"></div>
-                    <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                            <h3 class="text-xl font-semibold text-gray-800">Janata M.H.S. School, Nagbhid</h3>
-                            <div class="text-blue-600 font-medium mt-2 md:mt-0">2017 – 2018</div>
-                        </div>
-                        <div class="text-gray-600 mb-1">Nagpur University</div>
-                        <p class="text-gray-700">SSC, 89.60% | Chandrapur, Maharashtra</p>
-                    </div>
-                </div>
-            </div>
+            <div class="text-gray-600 mb-1">Amravati University</div>
+            <p class="text-gray-700">BE in Computer Science, 76.12% | Amravati, Maharashtra</p>
+          </div>
         </div>
+
+        <div class="relative timeline-container pl-10 pb-10">
+          <div class="timeline-dot"></div>
+          <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+              <h4 class="text-xl font-semibold text-gray-800">Janata Junior College, Nagbhid</h4>
+              <div class="text-blue-600 font-medium mt-2 md:mt-0">2019 – 2020</div>
+            </div>
+            <div class="text-gray-600 mb-1">Nagpur University</div>
+            <p class="text-gray-700">HSC, 68.77% | Chandrapur, Maharashtra</p>
+          </div>
+        </div>
+
+        <div class="relative timeline-container pl-10">
+          <div class="timeline-dot"></div>
+          <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+              <h4 class="text-xl font-semibold text-gray-800">Janata M.H.S. School, Nagbhid</h4>
+              <div class="text-blue-600 font-medium mt-2 md:mt-0">2017 – 2018</div>
+            </div>
+            <div class="text-gray-600 mb-1">Nagpur University</div>
+            <p class="text-gray-700">SSC, 89.60% | Chandrapur, Maharashtra</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Column -->
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center md:text-left">Experience</h3>
+
+        <!-- Experience Item -->
+        <div class="relative timeline-container pl-10 pb-10">
+          <div class="timeline-dot"></div>
+          <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+              <h4 class="text-xl font-semibold text-gray-800">Java Full Stack Development Course</h4>
+              <div class="text-blue-600 font-medium mt-2 md:mt-0">Aug 2024 – Mar 2025</div>
+            </div>
+            <div class="text-gray-600 mb-2">Satya Technologies</div>
+            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+              <li>Completed 6-month Full Stack Development course covering front-end & back-end.</li>
+              <li>Developed projects using Java, Spring Boot, Hibernate, REST APIs, MySQL.</li>
+              <li>Proficient in Oracle databases, PL/SQL, stored procedures, and version control with GitHub.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative timeline-container pl-10 pb-10">
+          <div class="timeline-dot"></div>
+          <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+              <h4 class="text-xl font-semibold text-gray-800">Web Designing Intern</h4>
+              <div class="text-blue-600 font-medium mt-2 md:mt-0">Apr 2023 – May 2023</div>
+            </div>
+            <div class="text-gray-600 mb-2">Webakruti</div>
+            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+              <li>Developed responsive websites using HTML, CSS, JavaScript & Bootstrap.</li>
+              <li>Optimized website speed by 30% and ensured cross-browser compatibility.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative timeline-container pl-10">
+          <div class="timeline-dot"></div>
+          <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+              <h4 class="text-xl font-semibold text-gray-800">Web Development Intern</h4>
+              <div class="text-blue-600 font-medium mt-2 md:mt-0">Mar 2023 – Apr 2023</div>
+            </div>
+            <div class="text-gray-600 mb-2">VaultofCodes</div>
+            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+              <li>Created interactive Tic-Tac-Toe game using HTML, CSS, JS.</li>
+              <li>Enhanced UI/UX with DOM manipulation and animations.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-800">Experience</h2>
-            <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 mb-8"></div>
-        </div>
-        <div class="max-w-3xl mx-auto">
-            <!-- Experience Item 1 -->
-            <div class="relative timeline-container pl-10 pb-10">
-            <div class="timeline-dot"></div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                <h3 class="text-xl font-semibold text-gray-800">Java Full Stack Development Course</h3>
-                <div class="text-blue-600 font-medium mt-2 md:mt-0">Aug 2024 - March 2025</div>
-                </div>
-                <div class="text-gray-600 mb-2">Satya Technologies</div>
-                <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                <li>Completed an intensive 6-month Full Stack Development course covering both front-end and back-end technologies.</li>
-                <li>Developed hands-on projects using Java, Spring Boot, Hibernate, REST APIs, and MySQL.</li>
-                <li>Gained expertise in building scalable web applications and implementing microservices architecture.</li>
-                <li>Worked with GitHub for version control and collaborated on real-world projects.</li>
-                <li>Proficient in designing, querying, and managing Oracle databases, with expertise in PL/SQL and stored procedures.</li>
-                </ul>
-            </div>
-            </div>
-
-            <!-- Experience Item 2 -->
-            <div class="relative timeline-container pl-10 pb-10">
-            <div class="timeline-dot"></div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                <h3 class="text-xl font-semibold text-gray-800">Web Designing Intern</h3>
-                <div class="text-blue-600 font-medium mt-2 md:mt-0">April 2023 - May 2023</div>
-                </div>
-                <div class="text-gray-600 mb-2">Webakruti</div>
-                <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                    <li>Developed responsive websites using HTML, CSS, JavaScript, and Bootstrap.</li>
-                    <li>Deployed a personal portfolio website implementing modern UI/UX principles.</li>
-                    <li>Optimized website speed and ensured cross-browser compatibility.</li>
-                    <li>Improved website speed by 30% through performance optimization.</li>
-                </ul>
-            </div>
-            </div>
-
-            <!-- Experience Item 3 -->
-            <div class="relative timeline-container pl-10">
-            <div class="timeline-dot"></div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                <h3 class="text-xl font-semibold text-gray-800">Web Development Intern</h3>
-                <div class="text-blue-600 font-medium mt-2 md:mt-0">March 2023 - April 2023</div>
-                </div>
-                <div class="text-gray-600 mb-2">VaultofCodes</div>
-                <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                    <li>Created an interactive browser-based Tic-Tac-Toe game using HTML, CSS, and JavaScript.</li>
-                    <li>Integrated game logic with DOM manipulation and event handling.</li>
-                    <li>Enhanced visual aesthetics and user experience based on user feedback.</li>
-                    <li> Received positive feedback for creativity and attention to design details.</li>
-                </ul>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
+    <section id="projects" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
             <div class="text-center mb-16">
@@ -508,7 +511,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-white">
+    <section id="skills" class="py-20 bg-gray-300 ">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <!-- Title -->
             <div class="text-center mb-16">
@@ -724,7 +727,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-800">Get In Touch</h2>
@@ -877,7 +880,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
