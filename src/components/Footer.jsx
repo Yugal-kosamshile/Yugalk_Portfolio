@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+function Footer() {
   const currentYear = new Date().getFullYear();
 
   // Helper components for social media SVG icons

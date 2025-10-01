@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Contact = () => {
+function Contact () {
   // 1. State for form data
   const [formData, setFormData] = useState({
     name: '',

@@ -66,7 +66,7 @@ const ExperienceCard = ({ item }) => {
   );
 };
 
-const Experience = () => {
+function Experience () {
   return (
     <section id="experience" className="py-20 bg-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

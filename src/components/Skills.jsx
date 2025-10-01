@@ -19,7 +19,7 @@ const SkillCard = ({ name, iconUrl }) => (
   </div>
 );
 
-const Skills = () => {
+function Skills () {
   const technicalSkills = [
     { name: 'Java', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
     { name: 'JavaScript', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
