@@ -48,15 +48,15 @@ cd your-portfolio
 npm install
 
 # Start the development server
-npm start
-
----
-
+npm run dev
+````
 
 ## 📬 Contact
 
 📧 **Email:** [ykosamshile@gmail.com](mailto:ykosamshile@gmail.com)
-💼 **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/yugal-kosamshile)
-💻 **GitHub:** [GitHub Profile](https://github.com/Yugal-kosamshile)
+
+💼 **LinkedIn:**[https://www.linkedin.com/in/yugal-kosamshile](https://www.linkedin.com/in/yugal-kosamshile)
+
+💻 **GitHub:** [https://github.com/Yugal-kosamshile](https://github.com/Yugal-kosamshile)
 
 ---
