@@ -77,9 +77,15 @@ const Footer = () => {
 
         {/* Copyright and Bottom Links Section */}
         <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">
-            &copy; {currentYear} Yugal Kosamshile. All rights reserved.
-          </p>
+          <div>
+              <p className="text-gray-400">
+                &copy; {currentYear} Yugal Kosamshile. All rights reserved.
+              </p>
+              <p className="text-gray-400">
+                Developed with ❤️ and code.
+              </p>
+          </div>
+         
           
           <div className="mt-4 md:mt-0">
             {/* The list of links is commented out in the original HTML, so it's kept empty in the JSX for fidelity. 

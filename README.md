@@ -1,16 +1,62 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **Personal Portfolio Website** — a responsive and modern web application built with **React.js**, **HTML**, **CSS**, and **Bootstrap**.  
+It showcases my journey, education, projects, and professional experience as a developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 **Visit the Portfolio:** [https://yugalk-portfolio.vercel.app/](https://yugalk-portfolio.vercel.app/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Sections Included
 
-## Expanding the ESLint configuration
+- **Navbar** – Easy navigation across all sections  
+- **Hero Section** – A short introduction and call-to-action  
+- **About Section** – Learn more about me and my background  
+- **Education Section** – My academic qualifications  
+- **Experience Section** – Work and internship experience  
+- **Projects Section** – A showcase of my featured projects  
+- **Skills Section** – Technologies and tools I work with  
+- **Contact Section** – Ways to connect with me  
+- **Footer** – Social links and credits
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| **Frontend** | React.js, HTML5, CSS3, JavaScript |
+| **Styling** | Bootstrap , Custom CSS |
+
+---
+
+## ⚙️ Installation and Setup
+
+If you'd like to run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/Yugal-kosamshile/Yugalk_Portfolio.git
+
+# Navigate into the project folder
+cd your-portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+---
+
+
+## 📬 Contact
+
+📧 **Email:** [ykosamshile@gmail.com](mailto:ykosamshile@gmail.com)
+💼 **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/yugal-kosamshile)
+💻 **GitHub:** [GitHub Profile](https://github.com/Yugal-kosamshile)
+
+---
