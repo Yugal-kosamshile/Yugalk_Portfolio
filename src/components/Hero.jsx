@@ -1,4 +1,5 @@
 import React from 'react';
+import resumePDF from '../assets/Yugal_Kosamshile_Resume.pdf';
 
 function Hero() {
     // Custom styles containing keyframes and custom classes for the animations
@@ -139,7 +140,7 @@ function Hero() {
                     <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                         <a href="#projects" className="bg-sky-500 text-white font-semibold py-3 px-8 rounded-full shadow-xl hover:bg-sky-600 transition-all duration-300 transform hover:scale-[1.05] hover:shadow-2xl">View My Work</a>
                         <a
-                            href="Yugal_Kosamshile_Resume.pdf"
+                            href={resumePDF}   
                             download="Yugal_Kosamshile_Resume.pdf"
                             className="bg-slate-700 text-white font-semibold py-3 px-8 rounded-full shadow-xl hover:bg-slate-800 transition-all duration-300 transform hover:scale-[1.05] flex items-center justify-center"
                         >
